@@ -10,6 +10,7 @@
     "pages:build": "npx @cloudflare/next-on-pages",
     "preview": "yarn pages:build && wrangler pages dev",
     "deploy": "yarn pages:build && wrangler pages deploy",
+    "sync-config": "wrangler pages download config --config wrangler.toml",
     "cf-typegen": "wrangler types --env-interface CloudflareEnv env.d.ts"
   },
   "dependencies": {
