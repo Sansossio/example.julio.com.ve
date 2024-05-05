@@ -13,6 +13,9 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v3
+      - uses: actions/setup-node@v2
+        with:
+          node-version: '20'
       - name: Dependencies
         run: yarn
       - name: Deploy
